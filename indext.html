@@ -11,7 +11,7 @@
     <div class="row5">
       <button
         onclick="
-        calculation = '';
+        calculation ='';
         console.log(calculation);
         "
       >
@@ -19,24 +19,23 @@
       </button>
       <button
         onclick="
-                calculation += '()';
-                console.log(calculation);
+      updateCalculation('()');
                 "
       >
         ()
       </button>
       <button
         onclick="
-      calculation += ' % ';
-      console.log(calculation);
+      updateCalculation(' % ');
+
       "
       >
         %
       </button>
       <button
         onclick="
-              calculation += ' / ';
-              console.log(calculation);
+         updateCalculation(' / ');
+
               "
       >
         &#247;
@@ -45,32 +44,32 @@
     <div class="row4">
       <button
         onclick="
-        calculation += '7';
-        console.log(calculation);
+        updateCalculation('7');
+
         "
       >
         7
       </button>
       <button
         onclick="
-                calculation += '8';
-                console.log(calculation);
+          updateCalculation('8');
+
                 "
       >
         8
       </button>
       <button
         onclick="
-      calculation += '9';
-      console.log(calculation);
+              updateCalculation('9');
+
       "
       >
         9
       </button>
       <button
         onclick="
-              calculation += ' * ';
-              console.log(calculation);
+                    updateCalculation(' * ');
+
               "
       >
         &times;
@@ -79,32 +78,32 @@
     <div class="row3">
       <button
         onclick="
-        calculation += '4';
-        console.log(calculation);
+                updateCalculation('4');
+
         "
       >
         4
       </button>
       <button
         onclick="
-                calculation += '5';
-                console.log(calculation);
+                        updateCalculation('5');
+
                 "
       >
         5
       </button>
       <button
         onclick="
-      calculation += '6';
-      console.log(calculation);
+             updateCalculation('6');
+
       "
       >
         6
       </button>
       <button
         onclick="
-              calculation += ' - ';
-              console.log(calculation);
+                    updateCalculation(' - ');
+
               "
       >
         &minus;
@@ -113,32 +112,32 @@
     <div class="row2">
       <button
         onclick="
-            calculation += '1';
-            console.log(calculation);
+                   updateCalculation('1');
+
             "
       >
         1
       </button>
       <button
         onclick="
-            calculation += '2';
-            console.log(calculation);
+                    updateCalculation('2');
+
             "
       >
         2
       </button>
       <button
         onclick="
-            calculation += '3';
-            console.log(calculation);
+                    updateCalculation('3');
+
             "
       >
         3
       </button>
       <button
         onclick="
-      calculation += ' + ';
-      console.log(calculation);
+             updateCalculation(' + ');
+
       "
       >
         +
@@ -147,32 +146,33 @@
     <div class="row1">
       <button
         onclick="
-            calculation += ' (-) ';
-            console.log(calculation);
+        updateCalculation('(-)');
+       
             "
       >
         L
       </button>
       <button
         onclick="
-            calculation += '0';
-            console.log(calculation);
+                   updateCalculation('0');
+
             "
       >
         0
       </button>
       <button
         onclick="
-            calculation += '.';
-            console.log(calculation);
+                    updateCalculation('.');
+
             "
       >
         .
       </button>
       <button
         onclick="
-      calculation = eval(calculation);
-      console.log(calculation);
+             calculation = eval(calculation);
+             console.log(calculation)
+
       "
       >
         =
@@ -181,6 +181,11 @@
 
     <script>
       let calculation = "";
+
+      function updateCalculation(value) {
+        calculation += value;
+        console.log(calculation);
+      }
     </script>
   </body>
 </html>
