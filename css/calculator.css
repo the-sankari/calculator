@@ -4,6 +4,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 h1{
@@ -17,6 +21,17 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+
+.container{
+    border: 3px solid #737171;
+    /* height: 800px; */
+    margin:100px auto ;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px  #737171;
+
 }
 
 .display {
