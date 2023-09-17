@@ -1,0 +1,75 @@
+body {
+  background-color: #222;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.container,main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  background-color: rgb(54, 54, 50);
+border-radius: 6px;
+  width: 280px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.calculation {
+  width: 95%;
+  height: 100%;
+  margin: 0 0;
+  text-align: right;
+  font-size: 40px;
+  color: #ffffff;
+  /* padding-right: 10px; */
+  /* background-color: antiquewhite; */
+}
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  width: 300px;
+}
+button {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 5px 5px;
+  background-color: rgb(54, 54, 50);
+  color: #ffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.row5 button,
+.row1 button:last-child,
+.row2 button:last-child,
+.row3 button:last-child,
+.row4 button:last-child {
+  color: rgb(40, 138, 40);
+}
+.row1 button:last-child {
+  background-color: rgb(28, 78, 28);
+  color: #ffffff;
+}
+
+.row5 button:first-child {
+  color: rgb(194, 20, 20);
+}
